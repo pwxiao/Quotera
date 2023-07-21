@@ -34,10 +34,10 @@ def return_OneText():
     category = request.args.get("category")
 
     category =  select(category)
-    # url = requests.get("https://api.pwxiao.top/" + category + ".json")
-    # text = url.text
-    with open("../sentences/"+category+".json",'r',encoding='utf-8') as f:
-         text = f.read()       
+    url = requests.get("https://api.pwxiao.top/sentences/" + category + ".json")
+    text = url.text
+    # with open("../sentences/"+category+".json",'r',encoding='utf-8') as f:
+    #      text = f.read()       
 
     res = json.loads(text)
 
