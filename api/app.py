@@ -18,7 +18,7 @@ app.config['JSON_AS_ASCII'] = False
 def search():
     query = request.args.get("s")
     key = 'hitokoto'
-    url = requests.get("https://api.pwxiao.top/i.json")
+    url = requests.get("https://api.pwxiao.top/sentences/i.json")
     text = url.text
     data = json.loads(text)
         
