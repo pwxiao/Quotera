@@ -47,6 +47,6 @@ def return_OneText():
         number = 6
 
     result = res[number]
-    OneText = json.dumps(result,ensure_ascii=False)
+    fina_res = json.dumps(result,ensure_ascii=False)
  
-    return result
+    return fina_res
