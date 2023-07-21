@@ -23,7 +23,7 @@ def search():
     data = json.loads(text)
         
     matches = [item for item in data if key in item and query in item[key]]
-    
+    matches = json.dumps(matches,ensure_ascii=False)
     return matches
     
 
