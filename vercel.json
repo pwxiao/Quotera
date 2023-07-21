@@ -1,20 +1,8 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/",
-      "headers": {
-        "cache-control": "no-cache, no-store, must-revalidate",
-        "Access-Control-Allow-Origin": "*"
-      },
-      "dest": "/api"
-    },
-    {
-      "src": "/search/(.*)",
-      "headers": {
-        "cache-control": "no-cache, no-store, must-revalidate",
-        "Access-Control-Allow-Origin": "*"
-      },
-      "dest": "/api/search/$1"
+      "source": "/api/(.*)",
+      "destination": "/.vercel/your_flask_app_name/api/$1"
     }
   ]
 }
