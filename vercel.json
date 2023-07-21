@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "/.vercel/your_flask_app_name/api/$1"
+      "destination": "/.vercel/my-words-api/api/$1"
     }
   ]
 }
