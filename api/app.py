@@ -1,15 +1,13 @@
 from flask import Flask , request
 import requests , json , random
 
-
-
-
 @app.route('/',methods=["GET"])
 def return_class():
-   headers = {
-    'User-Agent': 'Mozilla/5.0 (Linux; Android 13; V2203A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/1110005 MMWEBSDK/20230701 MMWEBID/7078 MicroMessenger/8.0.40.2420(0x28002858) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64',
-    'Referer': 'https://www.example.com',
-    'Cookie': 'PHPSESSID=ajrghtq0nm1ivf9baqjd64ihpp'
+        
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Linux; Android 13; V2203A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/111.0.5563.116 Mobile Safari/537.36 XWEB/1110005 MMWEBSDK/20230701 MMWEBID/7078 MicroMessenger/8.0.40.2420(0x28002858) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64',
+        'Referer': 'https://www.example.com',
+        'Cookie': 'PHPSESSID=ajrghtq0nm1ivf9baqjd64ihpp'
     }
 
 
@@ -64,5 +62,4 @@ def return_class():
             content+= '\n\n'
 
     fina_res = json.dumps(content,ensure_ascii=False)
-    
     return fina_res
