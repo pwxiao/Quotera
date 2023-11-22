@@ -618,4 +618,4 @@ def return_class():
             content+= '\n\n'
 
     fina_res = json.dumps(content,ensure_ascii=False)
-    return fina_res
+    return content
