@@ -1,6 +1,9 @@
 from flask import Flask , request
 import requests , json , random
 
+app = Flask(__name__)
+app.config['JSON_AS_ASCII'] = False
+
 @app.route('/',methods=["GET"])
 def return_class():
         
