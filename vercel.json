@@ -1,9 +1,5 @@
 {
     "rewrites": [
-        { "source": "/(.*)", "destination": "/api/app" }
-    ],
-    "engines": {
-        "node":"18.x"
-    }
-    
+        { "source": "/", "destination": "/api/app" }
+    ]
 }
