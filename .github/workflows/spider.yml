@@ -24,9 +24,9 @@ jobs:
 
       - name: Crawl data and update JSON
         run: |
-          python crawl_data.py
+          python CrawlData/crawl_data.py
         env:
-          DATA_JSON_PATH: data.json
+          DATA_JSON_PATH: CrawlData/data.json
           
       - name: commit
         run: |
