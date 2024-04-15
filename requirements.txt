@@ -1,5 +1,1 @@
-Flask
-requests
-jinja2
-pyjson
-pyrandom
+Flask==3.0.0
