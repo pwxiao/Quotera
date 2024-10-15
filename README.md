@@ -1,4 +1,4 @@
-# MyWords API
+# Quotera
 
 基于Vercel和Flask实现的api
 
